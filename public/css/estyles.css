@@ -357,11 +357,11 @@ html{
 }
 
 /*seccion de mi trabajo*/
-.mitrabajo{
+.contenedor-seccion{
     background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,1)),
     url("");
     background-size: cover;
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -369,12 +369,43 @@ html{
     align-items: center;
     overflow: hidden;
 }
-.subtitulomitrabajo{
+.contenedor-seccion .subtitulomitrabajo{
     color: #fff;
     font-family: 'Righteous';
     text-align: center;
     font-size: 48px;
     margin-top: 100px;
+}
+.contenedor-seccion .contenedor-proyecto{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenedor-seccion  .contenedor-glass{
+    height: 350px;
+    width: 500px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-seccion .contenedor-glass .descripcion{
+    width: 80%;
+    height: 80%;
+    align-items: left;
+}
+
+/*seccion de proyectos publicos*/
+.proyectospublicos{
+    background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,1)),
+    url("../assets/img/fondoproyectospublicos.jpg");
 }
 
 
