@@ -80,8 +80,10 @@ html{
 }
 .inicio .contenedor-banner{
     padding: 20px;
+    margin-top: 30px;
+    height: 80%;
     background-color: gray;
-    max-width: 350px;
+    max-width: 300px;
     text-align: center;
     border-radius: 40px;
 }
@@ -111,7 +113,7 @@ html{
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 25px 5px;
     font-size: 20px;
     transition: .3s;
 }
@@ -174,7 +176,9 @@ html{
 }
 .sobremi .contenido-seccion .cv{
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 300px;
 }
 .sobremi .contenido-seccion .cv a{
     cursor: pointer;
@@ -183,7 +187,7 @@ html{
     width: fit-content;
     height: 40px;
     display: block;
-    margin: 20px auto;
+   
     padding: 10px 22px;
     font-size: 16px;
     color: #fff;
@@ -206,7 +210,7 @@ html{
 /*seccion de skills*/
 .skills{
     background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,1)),
-    url(../assets/img/iphone-1852901_1280.jpg);
+    url(../assets/img/iphone-1852901_128);
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -214,6 +218,14 @@ html{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+.contenedor{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .subtituloskills{
     background-color: #1e2326;
@@ -409,8 +421,41 @@ html{
 }
 
 
+/*Media query de sobre mi*/
+@media (max-width: 1200px) { 
+    .sobremi .contenido-seccion {
+        display: flex;
+        flex-direction: column;
+    }
+    .sobremi .contenido-seccion .parrafo{
+        width: 100%;
+    }
+    .sobremi .fila .col{
+    width: 100%;
+    }
+    .sobremi .contenido-seccion .cv{
+        margin-top: 30px;
+    }
+}
 
+@media (max-width: 500px) { 
+    .sobremi{
+        padding-bottom: 200px;
+        height: auto;
+    }
+    .sobremi .contenedor-seccion{
+        width: 100%;
+        margin: 0;
+    }
+ }
 
+/*Media query de skills*/
+ @media (max-width: 500px) { 
+    .skills .slider{
+       padding-top: 0;
+    }
+ }
 
+ /*Media query de skills*/
 
 
