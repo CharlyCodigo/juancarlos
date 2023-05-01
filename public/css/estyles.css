@@ -492,3 +492,27 @@ html{
 }
 }
 
+ @media (max-width: 500px) {
+    .contenedor-seccion .contenedor-proyecto .contenedor-glass{
+        width: 100%;
+    }
+    .contenedor-seccion .contenedor-proyecto .contenedor-glass-descripcion{
+        width: 90%;
+    }
+    .contenedor-seccion .contenedor-proyecto .contenedor-glass div{
+        position: relative;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor-seccion .contenedor-proyecto .contenedor-glass div video{
+        position: relative;
+        width: 100%;
+    }
+    .contenedor-seccion .contenedor-proyecto .contenedor-glass div img{
+        position: relative;
+        width: 100%;
+    }
+    
+
+ } 
