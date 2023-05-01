@@ -377,7 +377,6 @@ html{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
     overflow: hidden;
 }
@@ -389,10 +388,11 @@ html{
     margin-top: 100px;
 }
 .contenedor-seccion .contenedor-proyecto{
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 .contenedor-seccion  .contenedor-glass{
     height: 350px;
@@ -408,7 +408,21 @@ html{
     align-items: center;
     flex-direction: column;
 }
-.contenedor-seccion .contenedor-glass .descripcion{
+.contenedor-seccion  .contenedor-glass-descripcion{
+    height: 350px;
+    width: 500px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-seccion .contenedor-glass-descripcion .descripcion{
     width: 80%;
     height: 80%;
     align-items: left;
@@ -456,6 +470,25 @@ html{
     }
  }
 
- /*Media query de skills*/
-
+ /*Media query de mi trabajo*/
+ @media (max-width: 1200px) { 
+    .contenedor-seccion .contenedor-proyecto{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .contenedor-seccion .contenedor-glass-descripcion{
+    width: 90%;
+    height: auto;
+    align-items: center;
+    position: relative;
+    justify-content: end;
+}
+    .contenedor-seccion .contenedor-glass-descripcion .descripcion{
+    margin: 20px;
+}
+}
 
