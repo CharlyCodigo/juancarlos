@@ -567,6 +567,9 @@ html{
         flex-direction: column;
         background-color: #1e2326;
     }
+    .contenedor-header .logo .nav-responsive ul li {
+        margin: 15px 0;
+    }
     .contenedor-header .logo .nav-responsive ul li a {
         font-size: 20px;
     }

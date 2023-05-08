@@ -1,3 +1,4 @@
+const body = document.getElementsByTagName("body");
 const nombre = document.getElementById("nombre");
 const telefono = document.getElementById("telefono");
 const email = document.getElementById("email");
@@ -96,6 +97,7 @@ menuSobremi.addEventListener("click",  () => clickMenuSection());
 menuSkills.addEventListener("click",  () => clickMenuSection());
 menuMitrabajo.addEventListener("click",  () => clickMenuSection());
 menuContacto.addEventListener("click",  () => clickMenuSection());
+
 
 window.onbeforeunload = limpiarFormulario;
 
