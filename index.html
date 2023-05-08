@@ -216,15 +216,16 @@
     <!--seccion contacto-->
     <section class="contacto">
         <h2 class="subtitulocontacto" id="contacto">CONTACTO</h2>
-        <form class="formulario" action="https://formsubmit.co/3d269ebf18f85c4be409280b6dd74b9d" method="POST">
+        <form onsubmit="return false" class="formulario" id="formulario" action="https://formsubmit.co/3d269ebf18f85c4be409280b6dd74b9d" method="POST">
             <h4>Contactame</h4>
-            <input class="campos" type="text" name="nombre" id="nombre" nombre placeholder="Ingresa tu nombre">
+            <input class="campos" type="text" name="nombre" id="nombre"  placeholder="Ingresa tu nombre">
             <input class="campos" type="text" name="telefono" id="telefono" placeholder="Ingresa tu numero de telefono">
             <input class="campos" type="email" name="email" id="email" placeholder="Ingresa tu direccion de correo electronico">
             <input class="campos" type="text" name="asunto" id="asunto" placeholder="Asunto">
             <textarea class="campos" type="text" name="contenido" id="contenido" placeholder="Contenido"></textarea>
-            <input type="submit" value="Enviar Mensaje" class="boton">
-            <p class="enviado" id="confirmacion"></p>
+            <button   id="boton" class="boton">Enviar Mensaje</button>
+            <p id="confirmacion">Existen algunnos campos vacios</p>
+            <p id="msgenviado"></p>
         </form>
     </section>
 </body>
