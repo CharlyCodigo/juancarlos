@@ -19,7 +19,6 @@ function clickIcon() {
     }
 }
 function clickMenuSection() {
-    console.log("entro");
     listMenu.setAttribute("style","display:none;");
     visible = false;
 }
